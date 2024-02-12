@@ -1,4 +1,3 @@
-
 const debounce = function (fn, t = 1000) {
     let timer;
     return function (...args) {
@@ -6,7 +5,6 @@ const debounce = function (fn, t = 1000) {
         timer = setTimeout(() => fn(...args), t);
     }
 };
-
 
 function playAudio() {
     document.getElementById('novideo').play();
@@ -16,8 +14,6 @@ function nextPage() {
     //window.location.href = "yes.html";
     document.getElementById('ans').style.display = 'block';
     document.getElementById('ask').style.display = 'none';
-    document.getElementById('novideo').pause();
-    document.getElementById('ansvideo').play();
 }
 
 function moveButton() {
@@ -27,3 +23,6 @@ function moveButton() {
     document.getElementById('noButton').style.top = `${y}px`;
     playAudio();
 }
+
+// Call playAudio() when the page is loaded
+window.addEventListener('load', playAudio);
