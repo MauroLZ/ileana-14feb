@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-IN" dir="ltr">
+<head>
+    <title>Do you wanna go out with me?</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="stylesheet" href="./style.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="ask" class="container">
+    <div>
+        <h1 class="header_text">Quieres ser mi valentín ileana bonita?</h1>
+    </div>
+    <div class="gif_container">
+        <img src="image/gengar.gif" alt="Cute animated illustration">
+    </div>
+    <div class="buttons">
+        <button class="btn" id="yesButton" onclick="nextPage()">Shi 💕</button>
+        <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
+    </div>
+    <video id="novideo" width="0" height="0" controls>
+        <source src="image/videoplayback%20(1).mp4"
+                type="video/mp4">
+    </video>
+</div>
+<div id="ans" class="container">
+    <div>
+        <h1 class="header_text">Buena elección:)</h1>
+    </div>
+    <div class="gif_container">
+        <img src="image/gengar.gif" alt="Cute animated illustration">
+    </div>
+    <div class="gif_container qrimage">
+        <img class="spotify" src="image/spcode-7z1gtBr9mseUN6Cp6R4Ndj.jpeg"
+             onclick="window.open('https://open.spotify.com/playlist/7z1gtBr9mseUN6Cp6R4Ndj?si=287c8bae64374eb5')">
+    </div>
+    <video id="ansvideo" width="0" height="0" controls>
+        <source src="image/videoplayback%20(1).mp4"
+                type="video/mp4">
+    </video>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
